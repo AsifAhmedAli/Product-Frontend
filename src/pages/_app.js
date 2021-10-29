@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import Meta from '../layout/Meta';
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 function MyApp({ Component, pageProps }) {
   return (

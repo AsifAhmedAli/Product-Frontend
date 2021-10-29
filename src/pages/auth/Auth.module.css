@@ -2,4 +2,56 @@
     text-indent: 2px;
 }
 
+.or_strike{
+    display: block;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap; 
+}
 
+.or_strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.or_strike > span:before,
+.or_strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: black;
+}
+
+.or_strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.or_strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.moving_circle{
+    animation: moving_circle 5s ease infinite;
+}
+
+@keyframes moving_circle {
+    0% {
+        transform: translate(-150%, 0);
+    }
+    25% {
+        transform: translate(0, -50%);
+    }
+    50% {
+        transform: translate(-50%, 0);
+    }
+    75% {
+        transform: translate(-100%, -100%);
+    }
+    100% {
+        transform: translate(-140%, -10%);
+    }
+}
