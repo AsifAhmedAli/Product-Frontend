@@ -15,7 +15,7 @@ const Meta = (props) => {
                     content="width=device-width,initial-scale=1"
                     key="viewport"
                 />
-                <link
+                {/* <link
                     rel="apple-touch-icon"
                     href={`${router.basePath}/apple-touch-icon.png`}
                     key="apple"
@@ -26,7 +26,7 @@ const Meta = (props) => {
                     sizes="32x32"
                     href={`${router.basePath}/favicon-32x32.png`}
                     key="icon32"
-                />
+                /> */}
                 <link
                     rel="icon"
                     type="image/png"

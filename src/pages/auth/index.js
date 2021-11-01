@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import styles from './Auth.module.css';
-import Signin from '../../components/Signin';
-import Signup from '../../components/Signup';
+import Signin from '../../components/auth/Signin';
+import Signup from '../../components/auth/Signup';
 
 export default function index() {
     const [toggle, setToggle] = useState(false);
@@ -14,14 +14,14 @@ export default function index() {
                 <div className="hidden sm:block sm:col-span-1 lg:col-span-2 sm:bg-blue-500 sm:shadow-lg sm:rounded-2xl md:w-6/7 md:h-6/7 sm:relative bg-gradient-to-r from-Auth_box_left to-Auth_box_right overflow-hidden">
                     <div className={`${styles.moving_circle} absolute bottom-12 right-4 w-96 h-96 bg-blue-400 bg-opacity-10 rounded-full`}></div>
                 </div>
-                <form className="px-4 sm:col-span-2 lg:col-span-1">
+                <div className="px-4 sm:col-span-2 lg:col-span-1">
                     <AuthSwitcher toggle={toggle} onClick={handleToggle}></AuthSwitcher>
                     {
                         toggle ?
                             <Signup setToggle={setToggle} toggle={toggle} /> :
                             <Signin setToggle={setToggle} toggle={toggle} />
                     }
-                </form>
+                </div>
             </div >
         </main >
     )
@@ -59,7 +59,7 @@ const AuthSwitcher = styled.div`
         bottom: -2.5px;
         right: ${props => props.toggle ? 0 : ""};
         text-align: center;
-        width: 40%;
+        width: 45%;
         height: 4.5px;
         border-radius: 40px;
         background: #3B88C3;
@@ -68,12 +68,12 @@ const AuthSwitcher = styled.div`
     &:after{
         content: ${props => props.toggle ? '"Sign Up"' : '"Sign In"'};
         position: absolute;
-        font-size: .9rem;
+        font-size: clamp(.6rem, 4vw, .9rem);
         bottom: -.5rem;
         right: ${props => props.toggle ? 0 : ""};
         text-align: center;
         cursor: pointer;
-        width: 41%;
+        width: ${props => props.toggle ? '50%' : '45%'};
         height: 4px;
     }
 `;
