@@ -155,8 +155,8 @@
     }
     
     .iframe_width_iphone{
-        width: 90%;
-        margin-right: 2rem;
+        width: 100%;
+        margin: 0 auto;
         height: 50%;
     }
     .pricing_card{
@@ -173,6 +173,7 @@
 }
 
 @media screen and (max-width: 400px) {
+    
     .pricing_card{
         width: 90%;
         height: 500px;

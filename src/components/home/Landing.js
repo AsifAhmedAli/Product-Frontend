@@ -3,10 +3,10 @@ import HomeBtn from '../../elements/HomeBtn'
 
 export default function Landing() {
     return (
-        <section className="py-14 md:py-14 lg:pt-0 lg:pb-24 h-auto sm:pr-0 relative z-40">
-            <div className="w-full custom_container mx-auto relative z-50">
+        <section className="py-14 md:py-14 lg:pt-0 lg:pb-24 h-auto sm:pr-0 relative z-40 px-4">
+            <div className="w-full container mx-auto relative z-50">
                 <div className="grid lg:grid-cols-2 sm:items-center sm:justify-between h-auto">
-                    <div className="w-full mb-16 flex flex-col justify-center text-white">
+                    <div className="w-full mb-16 flex flex-col justify-center text-white px-4 sm:px-14 lg:px-0">
                         <h1 className="sm:text-6xl text-5xl sm:text-left my-8 font-bold">Let start <br /> earning with us</h1>
                         <p className="mb-10">Develop a website by finding a product identity that has value and
                             branding to become a characteristic of a company.</p>
