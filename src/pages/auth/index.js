@@ -9,10 +9,13 @@ export default function index() {
     const handleToggle = () => setToggle(!toggle);
 
     return (
-        <main className="bg-authScreenBg sm:pb-0 pb-14">
+        <main className="bg-authScreenBg sm:pb-0 pb-18 px-4 lg:px-0">
             <div className="container mx-auto grid sm:grid-cols-3 h-screen w-full pt-14 px-4 sm:pt-0 sm:px-0 sm:gap-4 sm:justify-center sm:items-center">
-                <div className="hidden sm:block sm:col-span-1 lg:col-span-2 sm:bg-blue-500 sm:shadow-lg sm:rounded-2xl md:w-6/7 md:h-6/7 sm:relative bg-gradient-to-r from-Auth_box_left to-Auth_box_right overflow-hidden">
-                    <div className={`${styles.moving_circle} absolute bottom-12 right-4 w-96 h-96 bg-blue-400 bg-opacity-10 rounded-full`}></div>
+                <div className={`hidden sm:block sm:col-span-1 lg:col-span-2 bg-black sm:shadow-lg sm:rounded-2xl md:w-6/7 md:h-6/7 sm:relative overflow-hidden relative z-40 ${styles.box}`}>
+                    <div className={`${styles.box_inner_circle} lg:w-98 lg:h-98 w-72 h-72 absolute bottom-8 right-6 bg-opacity-10 rounded-full z-40`}></div>
+                    <div className={`${styles.blur_circle_1} z-10 rounded-full`}></div>
+                    <div className={`${styles.blur_dot_1} z-10 rounded-full`}></div>
+                    <div className={`${styles.blur_dot_2} z-10 rounded-full`}></div>
                 </div>
                 <div className="px-4 sm:col-span-2 lg:col-span-1">
                     <AuthSwitcher toggle={toggle} onClick={handleToggle}></AuthSwitcher>

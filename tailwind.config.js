@@ -7,16 +7,22 @@ module.exports = {
       screens: {
         default: '1200px',
         sm: "100%",
-        md: '769px',
-        lg: "1024px",
-        xl: "1300px"
+        md: '100%',
+        lg: "1000px",
+        xl: "1200px"
       }
     },
     backgroundColor: theme => ({
       ...theme('colors'),
+      'primary': '#275392',
       'signinBtn': '#3B88C3',
       'signinBtnHover': '#0C71BE',
       'authScreenBg': '#F5F8FF'
+    }),
+    textColor: theme => ({
+      ...theme('colors'),
+      'orange-800': '#FF8C00',
+      'primary': '#275392'
     }),
     extend: {
       colors: {
@@ -29,6 +35,10 @@ module.exports = {
       width: theme => ({
         "6/7": "90%",
       }),
+      spacing: {
+        '98': '32rem',
+        '100': '38rem',
+      },
     },
   },
   variants: {
