@@ -8,25 +8,26 @@
     transform: rotate(-1deg);
 }
 
+.section_gradient{
+    background: linear-gradient(150.01deg, #2E559A 0%, #276DC3 43.77%, #412C53 98.95%);
+}
+
 .pricing_card{
     width: 380px;
     height: 500px;
 }
 
-.section_gradient{
-    background: linear-gradient(150.01deg, #2E559A 0%, #276DC3 43.77%, #412C53 98.95%);
-}
-​
 
-.blur_dot_1s{
+.blur_dot_1{
     position: absolute;
     width: 39px;
     height: 39px;
-    left: -5%;
-    top: 10%;
+    left: 5%;
+    top: 4%;
     background: #3EA5D2;
-    filter: blur(12px);
+    filter: blur(8px);
 }
+
 .blur_dot_2{
     position: absolute;
     width: 48px;

@@ -23,7 +23,7 @@ export default function Landing() {
                         <div className={`${styles.iframe_width_iphone} absolute w-6/7 bg-black lg:h-3/6 md:h-6/7 h-3/5 lg:top-36 top-8 rounded-3xl overflow-hidden translate-y-0 z-50`}>
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8FqlTslU22s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
-                        <div className={`${styles.blur_dot_1s} z-20`}></div>
+                        <div className={`${styles.blur_dot_1} z-20 rounded-full`}></div>
                         <div className={`${styles.blur_dot_2} z-20`}></div>
                         <div className={`${styles.blur_dot_3} z-20`}></div>
                     </div>
