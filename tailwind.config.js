@@ -21,7 +21,7 @@ module.exports = {
     }),
     textColor: theme => ({
       ...theme('colors'),
-      'orange-800': '#FF8C00',
+      'orange-900': 'rgb(255, 166, 0)',
       'primary': '#275392'
     }),
     extend: {

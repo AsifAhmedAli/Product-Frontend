@@ -3,7 +3,7 @@
 }
 
 .landing_circle{
-    background: linear-gradient(90deg, rgba(62, 166, 210, 0.575) 0%,rgb(126, 95, 228) 100%);
+    background: linear-gradient(110deg, rgba(62, 166, 210, 0.575) 0%,rgba(126, 95, 228, 0.986) 100%);
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
     transform: rotate(-1deg);
 }
@@ -15,8 +15,17 @@
 .pricing_card{
     width: 380px;
     height: 500px;
+    box-shadow: 0px 0px 20px .1px rgba(14, 43, 95, 0.699);
 }
 
+.png_bg_transparent{
+    background-color: inherit;
+}
+
+.png_bg_transparent > div > img{
+    background-color: transparent;
+    background: transparent;
+}
 
 .blur_dot_1{
     position: absolute;

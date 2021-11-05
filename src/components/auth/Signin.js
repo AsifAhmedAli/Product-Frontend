@@ -44,10 +44,10 @@ export default function Signin({ setToggle, toggle }) {
                 errors={formik.errors.password && formik.touched.password && formik.errors.password}
             />
 
-            <label className="text-sm flex text-black justify-between items-center pt-10">
+            <label className="text-sm pt-10 flex text-black items-center justify-between">
                 <div className="flex items-center">
                     <input type="checkbox" name="remember" onChange={formik.handleChange} value={formik.values.remember} />
-                    <span className="px-2 text-black">
+                    <span className="px-2">
                         Remember Me
                     </span>
                 </div>
@@ -56,9 +56,10 @@ export default function Signin({ setToggle, toggle }) {
                 </a>
             </label>
 
+
             {formik.isSubmitting ? <FormSubmitBtn type="submit" value="SIGN IN" loading /> : <FormSubmitBtn type="submit" value="SIGN IN" />}
 
-            <a className="cursor-pointer text-center w-full block" onClick={e => setToggle(!toggle)}>New on our platform? Create an account</a>
+            <a className=" w-full cursor-pointer text-center block" onClick={e => setToggle(!toggle)}>New on our platform? Create an account</a>
 
             <SocialLogin />
         </form>

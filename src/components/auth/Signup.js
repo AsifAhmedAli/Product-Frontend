@@ -28,7 +28,7 @@ export default function Signin({ toggle, setToggle }) {
     })
     return (
         <>
-            {success && (<div className={`bg-blue-200 p-3 rounded-md animate-pulse`}>User successfully registered</div>)}
+            {success && (<div className={`bg-blue-200 p-3 animate-pulse rounded-md `}>User successfully registered</div>)}
             <form onSubmit={formik.handleSubmit}>
                 <FormInput
                     type="text"
@@ -74,7 +74,7 @@ export default function Signin({ toggle, setToggle }) {
                 {formik.isSubmitting ? <FormSubmitBtn type="submit" value="SIGN UP" loading /> : <FormSubmitBtn type="submit" value="SIGN UP" />}
 
                 <a
-                    className="cursor-pointer text-center w-full block"
+                    className="cursor-pointer text-center block w-full"
                     onClick={e => setToggle(!toggle)}>Already have an account? Sign in instead
                 </a>
 

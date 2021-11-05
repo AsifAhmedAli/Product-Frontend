@@ -19,7 +19,6 @@ export default function Landing() {
                     </div>
                     <div className="w-full flex items-center justify-center relative">
                         <div className={`${styles.landing_circle} lg:w-100 lg:h-100 w-72 h-72 bg-blue-400 rounded-full z-50 opacity-40`}></div>
-                        {/* Video youtube */}
                         <div className={`${styles.iframe_width_iphone} absolute w-6/7 bg-black lg:h-3/6 md:h-6/7 h-3/5 lg:top-36 top-8 rounded-3xl overflow-hidden translate-y-0 z-50`}>
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8FqlTslU22s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>

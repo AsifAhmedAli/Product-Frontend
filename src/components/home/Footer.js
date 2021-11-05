@@ -10,23 +10,23 @@ export default function Footer() {
                     <Image src='/logo.png' alt="MEXIL" width={120} height={60} />
                 </div>
                 <div className="flex items-center justify-center mb-8 flex-wrap">
-                    <div className="mr-4 hover:text-orange-800">
+                    <div className="mr-4 hover:text-orange-900 transition-colors">
                         <Link href="/home">Home</Link>
                     </div>
-                    <div className="mr-4 hover:text-orange-800">
+                    <div className="mr-4 hover:text-orange-900 transition-colors">
 
                         <Link href="/about">About</Link>
                     </div>
 
-                    <div className="mr-4 hover:text-orange-800">
+                    <div className="mr-4 hover:text-orange-900 transition-colors">
                         <Link href="/what">What we do</Link>
                     </div>
 
-                    <div className="mr-4 hover:text-orange-800">
+                    <div className="mr-4 hover:text-orange-900 transition-colors">
                         <Link href="/earn">How to earn</Link>
                     </div>
 
-                    <div className="mr-4 hover:text-orange-800">
+                    <div className="mr-4 hover:text-orange-900 transition-colors">
                         <Link href="/price">Pricing</Link>
                     </div>
                 </div>

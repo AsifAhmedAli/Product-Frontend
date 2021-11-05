@@ -51,7 +51,7 @@ function Navbar() {
                             </a>
                         </div>
                     </div>
-                    <button className="hover:bg-black hover:text-white transition-all bg-white text-black px-3 py-2 rounded-md text-sm font-medium">Lets Talk</button>
+                    <button className="hover:bg-transparent hover:text-white transition-colors bg-white text-black px-3 py-1 rounded-md text-sm font-medium border-white border-opacity-50 border-2">Lets Talk</button>
                     <div className="-mr-2 flex md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
