@@ -1,0 +1,81 @@
+#market{
+    background: black;
+}
+
+.custom_scroll{
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: rgb(35, 107, 241) orange;
+}
+
+
+.sidebar{
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient(150.01deg, #2E559A 0%, #276DC3 43.77%, #412C53 98.95%);
+}
+
+.welcome{
+    background: linear-gradient(150.01deg, #2E559A 0%, #276DC3 43.77%, #412C53 98.95%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 14vh;
+}
+
+.market_card{
+    width: 30%;
+}
+
+.market_card_btn{
+    background: linear-gradient(92.41deg, #2E559A 22.34%, #276DC3 52.68%, #412C53 84.54%);
+}
+
+.blur_circle_1{
+    position: absolute;
+    width: 632px;
+    height: 732px;
+    left: -10%;
+    top: -30%;
+    background: #412C53;
+    filter: blur(300px);
+}
+.blur_circle_2{
+    position: absolute;
+    width: 632px;
+    height: 100%;
+    right: -10%;
+    top: -20%;
+    background: #2672C5;
+    filter: blur(300px);
+}
+
+@media screen and (max-width: 768px){
+    .sidebar{
+        height: 75vh;
+    }
+
+    .welcome{
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .market_card{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 400px){
+    .welcome{
+        gap: 0px;
+    }
+}
+@media screen and (max-width: 500px){
+    .market_card{
+        width: 90%;
+    }
+    .welcome{
+        height: 16vh;
+    }
+}
