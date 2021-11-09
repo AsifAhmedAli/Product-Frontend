@@ -11,13 +11,13 @@ export default function Navbar() {
                     </div>
                     <div className="icons">
                         <Link href="/front">
-                            <i class="fas fa-wallet text-white mr-10 cursor-pointer hover:text-black transition-colors"></i>
+                            <i className="fas fa-wallet text-white mr-10 cursor-pointer hover:text-black transition-colors"></i>
                         </Link>
                         <Link href="/front">
-                            <i class="fas fa-bell text-white mr-10 cursor-pointer hover:text-black transition-colors"></i>
+                            <i className="fas fa-bell text-white mr-10 cursor-pointer hover:text-black transition-colors"></i>
                         </Link>
                         <Link href="/front">
-                            <i class="fas fa-user-circle text-white mr-10 cursor-pointer hover:text-black transition-colors"></i>
+                            <i className="fas fa-user-circle text-white mr-10 cursor-pointer hover:text-black transition-colors"></i>
                         </Link>
                     </div>
                 </div>

@@ -16,7 +16,7 @@ export default function Work() {
                 <div className="grid lg:grid-cols-2 grid-flow-row-dense md:grid-cols-2 justify-center items-center gap-10 pb-24 relative z-20">
                     <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80" alt="What we do" />
                     <div className="text-left sm:px-4 px-0">
-                        <h1 className="text-3xl my-4">What we do</h1>
+                        <h1 className="font_raleway text-3xl my-4 font-bold">What we do</h1>
                         <p className="my-6 text-sm">Develop a website by finding a product identity that has value and branding to become a characteristic of a company. We will also facilitate the business marketing of these products with our SEO experts so that they become a ready-to-use website and help sell a product from the companyDevelop a website by finding a product identity that has value and branding to become a characteristic of a company. We will also facilitate the business marketing of these products with our SEO experts so that they become a ready-to-use website and help sell a product from the companyDevelop a website by finding a product identity that has value and branding to become a characteristic of a company.
                         </p>
                         <HomeBtn>Learn More</HomeBtn>
@@ -27,7 +27,7 @@ export default function Work() {
                     <div className={`grid lg:grid-cols-2 md:grid-cols-2 justify-center items-center gap-10 relative z-20`}>
                         <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80" alt="What we do" />
                         <div className="text-left sm:px-4 px-0">
-                            <h1 className="text-4xl my-4 z-20">How to earn</h1>
+                            <h1 className="text-3xl my-4 z-20 font_raleway font-bold">How to earn</h1>
                             <p className="my-6 text-sm z-20">Develop a website by finding a product identity that has value and branding to become a characteristic of a company. We will also facilitate the business marketing of these products with our SEO experts so that they become a ready-to-use website and help sell a product from the companyDevelop a website by finding a product identity that has value and branding to become a characteristic of a company. We will also facilitate the business marketing of these products with our SEO experts so that they become a ready-to-use website and help sell a product from the company.
                             </p>
                             <HomeBtn>Learn More</HomeBtn>
@@ -37,7 +37,7 @@ export default function Work() {
                 {
                     !toggleRow && <div className={`grid lg:grid-cols-2 md:grid-cols-2 justify-center items-center gap-10 relative z-20`}>
                         <div className="text-left sm:px-4 px-0">
-                            <h1 className="text-4xl my-4 z-20">How to earn</h1>
+                            <h1 className="text-3xl my-4 z-20 font_raleway font-bold">How to earn</h1>
                             <p className="my-6 text-sm z-20">Develop a website by finding a product identity that has value and branding to become a characteristic of a company. We will also facilitate the business marketing of these products with our SEO experts so that they become a ready-to-use website and help sell a product from the companyDevelop a website by finding a product identity that has value and branding to become a characteristic of a company. We will also facilitate the business marketing of these products with our SEO experts so that they become a ready-to-use website and help sell a product from the company.
                             </p>
                             <HomeBtn>Learn More</HomeBtn>
