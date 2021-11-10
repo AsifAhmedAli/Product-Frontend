@@ -1,8 +1,8 @@
 #market{
     background: #181B20;
-    background: linear-gradient(-45deg, #412C53, #9a1fec, #23a6d5, #23d5ab);
+    /* background: linear-gradient(-45deg, #412C53, #9a1fec, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite; */
 }
 
 
@@ -13,18 +13,44 @@
 
 
 .sidebar{
+    width: 320px;
+    height: 100vh;
+    background: red;
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-150.01deg, #2E559A 0%, #276DC3 43.77%, #412C53 98.95%);
+}
+
+.content{
+    width: 90%;
+    padding-top: 4rem;
+}
+
+.free{
+    margin-left: 340px;
+}
+
+.navbar{
     width: 100%;
-    height: 85vh;
-    background: linear-gradient(150.01deg, #2e569a3d 0%, #276dc33a 43.77%, #412c5383 98.95%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(150.01deg, #2E559A 0%, #276DC3 43.77%, #412C53 98.95%);
 }
 
 .welcome{
-    background: linear-gradient(150.01deg, #2e569a3d 0%, #276dc33a 43.77%, #412c5383 98.95%);
+    /* background: linear-gradient(150.01deg, #2e569a3d 0%, #276dc33a 43.77%, #412c5383 98.95%); */
     /* background: linear-gradient(150.01deg, #2E559A 0%, #276DC3 43.77%, #412C53 98.95%); */
+    /* width: 77%; */
+    margin-left: 320px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 14vh;
+    height: 15vh;
+    flex-wrap: wrap;
+    padding-top: 1rem;
 }
 
 .market_card_btn{
@@ -37,7 +63,7 @@
     width: 632px;
     height: 632px;
     left: -10%;
-    top: -30%;
+    top: -50%;
     background: #412C53;
     filter: blur(300px);
 }
@@ -66,30 +92,29 @@
 
 
 @media screen and (max-width: 768px){
-
+    .cards{
+        max-height: 100%;
+    }
+    .content{
+        overflow: auto;
+        border-radius: 0;
+        width: 97%;
+    }
     .welcome{
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
+        overflow: auto;
     }
 }
 
 @media screen and (max-width: 640px){
-    .sidebar{
-        width: 95%;
-        height: 45vh;
-    }
+   
 }
 
 @media screen and (max-width: 400px){
     
-    .welcome{
-        gap: 0px;
-    }
 }
 @media screen and (max-width: 500px){
     
-    .welcome{
-        height: 16vh;
-    }
 }
