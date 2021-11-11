@@ -1,16 +1,24 @@
 import styles from './Market.module.css';
 import Navbar from '../../components/market/Navbar';
 import Sidebar from '../../components/market/Sidebar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Free from '../../components/market/Free';
 import Welcome from '../../components/market/Welcome';
 
 export default function index() {
     const [route, setRoute] = useState('free');
+    const [toggleSidebar, setToggleSidebar] = useState(typeof window !== 'undefined' && window.matchMedia("(max-width: 640px)").matches);
+
+    useEffect(() => {
+        window.matchMedia("(max-width: 640px)").addEventListener('change', e => {
+            setToggleSidebar(e.matches);
+        });
+    }, [])
+
     return (
-        <main id={`${styles.market}`} className="h-screen relative">
-            <Navbar />
-            <Sidebar setRoute={setRoute} route={route} />
+        <main id={`${styles.market}`} className="relative">
+            <Navbar toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar} />
+            <Sidebar setRoute={setRoute} route={route} toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar} />
             <div className={`${styles.content}`}>
                 <Welcome />
                 {(() => {
@@ -28,9 +36,6 @@ export default function index() {
                     }
                 })()}
             </div>
-
-            {/* <div className={`${styles.blur_circle_1} z-10 rounded-full`}></div>
-            <div className={`${styles.blur_circle_2} z-10 rounded-full`}></div> */}
 
         </main>
     )
