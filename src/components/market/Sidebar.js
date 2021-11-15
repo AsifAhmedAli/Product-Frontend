@@ -10,39 +10,48 @@ export default function Sidebar({ setRoute, toggleSidebar, setToggleSidebar }) {
                     <Image src='/logo.png' width="180%" height="100%" />
                 </div>
                 <div className="visible sm:hidden">
-                    <i class="fas fa-times text-white text-2xl cursor-pointer hover:text-gray-800 " onClick={() => setToggleSidebar(!toggleSidebar)}></i>
+                    <i className="fas fa-times text-white text-2xl cursor-pointer hover:text-gray-800 " onClick={() => setToggleSidebar(!toggleSidebar)}></i>
                 </div>
-            </div>
-            <div className="capitalize bg-white text-primary lg:w-2/3 w-full mx-auto lg:rounded-xl rounded-none text-center py-2 font-bold mb-14">
-                Select category
             </div>
             <div className="flex flex-wrap items-center justify-center">
                 <div className="w-full">
-                    <div className="hover:bg-white hover:text-primary text-white text-center py-2 font-bold mb-4">
+                    <div className="hover:bg-purple-500 w-1/2 block mx-auto text-white text-left py-2 font-bold mb-4 rounded-lg">
                         <Link href="/market">
-                            <div className="pl-4 sm:pl-0 cursor-pointer" onClick={() => setRoute('free')}>
-                                Free
+                            <div className="pl-4 sm:pl-2 cursor-pointer flex items-centerr flex items-center" onClick={() => setRoute('free')}>
+                                <i className="fas fa-lightbulb pr-2 text-xs"></i>
+                                <div className="sm:text-sm">Free</div>
                             </div>
                         </Link>
                     </div>
-                    <div className="hover:bg-white hover:text-primary text-white text-center py-2 font-bold mb-4">
+                    <div className="hover:bg-purple-500 w-1/2 block mx-auto text-white text-left py-2 font-bold mb-4 rounded-lg">
                         <Link href="/market">
-                            <div className="pl-4 sm:pl-0 cursor-pointer" onClick={() => setRoute('premium')}>
-                                Premium
+                            <div className="pl-4 sm:pl-2 cursor-pointer flex items-center" onClick={() => setRoute('premium')}>
+                                <i className="fas fa-wallet pr-2 text-xs"></i>
+                                <div className="sm:text-sm">Wallet</div>
                             </div>
                         </Link>
                     </div>
-                    <div className="hover:bg-white hover:text-primary text-white text-center py-2 font-bold mb-4">
+                    <div className="hover:bg-purple-500 w-1/2 block mx-auto text-white text-left py-2 font-bold mb-4 rounded-lg">
                         <Link href="/market">
-                            <div className="pl-4 sm:pl-0 cursor-pointer" onClick={() => setRoute('chat')}>
-                                Chat box
+                            <div className="pl-4 sm:pl-2 cursor-pointer flex items-center" onClick={() => setRoute('chat')}>
+                                <i className="fas fa-shopping-basket pr-2 text-xs"></i>
+                                <div className="sm:text-sm">Buy Stars</div>
                             </div>
                         </Link>
                     </div>
-                    <div className="hover:bg-white hover:text-primary text-white text-center py-2 font-bold mb-4">
+                    <div className="hover:bg-purple-500 w-1/2 block mx-auto text-white text-left py-2 font-bold mb-4 rounded-lg">
                         <Link href="/market">
-                            <div className="pl-4 sm:pl-0 cursor-pointer" onClick={() => setRoute('settings')}>
-                                Settings
+                            <div className="pl-4 sm:pl-2 cursor-pointer flex items-center" onClick={() => setRoute('settings')}>
+                                <i className="fas fa-comments pr-2 text-xs"></i>
+                                <div className="sm:text-sm">Chat Box</div>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="hover:bg-purple-500 w-1/2 block mx-auto text-white text-left py-2 font-bold mb-4 rounded-lg">
+                        <Link href="/market">
+                            <div className="pl-4 sm:pl-2 cursor-pointer flex items-center" onClick={() => setRoute('settings')}>
+                                <i className="fas fa-user-friends pr-2 text-xs"></i>
+                                <div className="sm:text-sm">Friends List</div>
                             </div>
                         </Link>
                     </div>

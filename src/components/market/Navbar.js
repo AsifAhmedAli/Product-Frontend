@@ -3,7 +3,7 @@ import styles from '../../pages/market/Market.module.css';
 
 export default function Navbar({ toggleSidebar, setToggleSidebar }) {
     return (
-        <nav className={`${styles.navbar} z-40`}>
+        <nav className={`${styles.navbar} z-auto`}>
             <div className="container mx-auto px-2">
                 <div className="flex items-center justify-between flex-wrap py-4">
                     <div>

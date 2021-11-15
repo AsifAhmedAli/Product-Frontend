@@ -19,7 +19,7 @@ export default function index() {
         <main id={`${styles.market}`} className="relative">
             <Navbar toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar} />
             <Sidebar setRoute={setRoute} route={route} toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar} />
-            <div className={`${styles.content}`}>
+            <div className={`${styles.content} relative z-40`}>
                 <Welcome />
                 {(() => {
                     switch (route) {
@@ -36,7 +36,10 @@ export default function index() {
                     }
                 })()}
             </div>
-
+            <div className={`${styles.big_circle_bg} lg:w-98 lg:h-98 w-96 h-96 bg-blue-400 rounded-full z-10`}></div>
+            <div className={`${styles.blur_circle_bg} w-96 h-96 z-20 rounded-full`}></div>
+            <div className={`${styles.blur_dot_1} z-30 rounded-full`}></div>
+            <div className={`${styles.blur_dot_2} z-30 rounded-full`}></div>
         </main>
     )
 }
