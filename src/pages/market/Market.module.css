@@ -1,11 +1,6 @@
 #market{
     background: #181B20;
-}
-
-
-.custom_scroll{
-    scrollbar-width: thin;          /* "auto" or "thin" */
-    scrollbar-color: rgba(35, 107, 241, 0.726) #412c5383;
+    /* Custom scrollbar */
 }
 
 
@@ -17,11 +12,11 @@
 }
 
 .content{
-    width: 90%;
+    max-width: 90%;
     padding-top: 4rem;
 }
 
-.free,.welcome{
+.dashboard,.welcome{
     margin-left: 340px;
 }
 
@@ -106,34 +101,38 @@
     .content{
         overflow: auto;
         border-radius: 0;
-        width: 100%;
+        max-width: 100%;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 868px){
     
     .welcome{
         flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
-        overflow: auto;
+        justify-content: space-around;
+        overflow: hidden;
+        height: 8rem;
+    }
+
+    .welcome h1{
+        font-size: 1.4rem;
     }
     
 }
 
 @media screen and (max-width: 640px){
-    
-    .free,.welcome{
-        margin-left: 10px;
+    .welcome{
+        gap: 1rem;
+    }
+    .dashboard,.welcome{
+        margin-left: 1px;
     }
 }
 
 @media screen and (max-width: 400px){
     .welcome{
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
-        overflow: hidden;
-        /* margin-left: 10px; */
     }
 }
 

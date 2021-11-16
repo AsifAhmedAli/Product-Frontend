@@ -15,8 +15,26 @@ a {
   box-sizing: border-box;
 }
 
+:root{
+  scrollbar-color: rgb(95, 147, 241) rgb(29, 85, 190);
+  scrollbar-width: thin;
+}
+
+
 html,body{
   font-family: 'Roboto', sans-serif, 'Font Awesome 5 Free', 'fontawesome';
+}
+
+body::-webkit-scrollbar {
+  width: .5em;
+}
+ 
+body::-webkit-scrollbar-track {
+  background-color: rgb(29, 85, 190); 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(95, 147, 241);
 }
 
 .font_raleway{
@@ -26,3 +44,5 @@ html,body{
 .custom_container{
   max-width: 80%;
 }
+
+

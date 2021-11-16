@@ -2,11 +2,11 @@ import styles from './Market.module.css';
 import Navbar from '../../components/market/Navbar';
 import Sidebar from '../../components/market/Sidebar';
 import { useEffect, useState } from 'react';
-import Free from '../../components/market/Free';
+import Dashboard from '../../components/market/Dashboard';
 import Welcome from '../../components/market/Welcome';
 
 export default function index() {
-    const [route, setRoute] = useState('free');
+    const [route, setRoute] = useState('dashboard');
     const [toggleSidebar, setToggleSidebar] = useState(typeof window !== 'undefined' && window.matchMedia("(max-width: 640px)").matches);
 
     useEffect(() => {
@@ -16,15 +16,15 @@ export default function index() {
     }, [])
 
     return (
-        <main id={`${styles.market}`} className="relative">
+        <main id={`${styles.market}`}>
             <Navbar toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar} />
             <Sidebar setRoute={setRoute} route={route} toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar} />
             <div className={`${styles.content} relative z-40`}>
                 <Welcome />
                 {(() => {
                     switch (route) {
-                        case 'free':
-                            return <Free />
+                        case 'dashboard':
+                            return <Dashboard />
                         case 'premium':
                             return <div>something</div>
                         case 'chat':

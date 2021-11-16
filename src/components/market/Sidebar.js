@@ -17,9 +17,9 @@ export default function Sidebar({ setRoute, toggleSidebar, setToggleSidebar }) {
                 <div className="w-full">
                     <div className="hover:bg-purple-500 w-1/2 block mx-auto text-white text-left py-2 font-bold mb-4 rounded-lg">
                         <Link href="/market">
-                            <div className="pl-4 sm:pl-2 cursor-pointer flex items-centerr flex items-center" onClick={() => setRoute('free')}>
+                            <div className="pl-4 sm:pl-2 cursor-pointer flex items-centerr flex items-center" onClick={() => setRoute('dashboard')}>
                                 <i className="fas fa-lightbulb pr-2 text-xs"></i>
-                                <div className="sm:text-sm">Free</div>
+                                <div className="sm:text-sm">Dashboard</div>
                             </div>
                         </Link>
                     </div>

@@ -35,7 +35,7 @@ const AuthSwitcher = styled.div`
     height: .1rem;
     width: 35%;
     margin: 2rem auto 3rem auto;
-    background-color: red;
+    background-color: black;
     position: relative;
 
     @keyframes slide-in-left {
