@@ -5,7 +5,7 @@ import { validateSignupInput } from '../../utils/validator';
 import FormSubmitBtn from '../../elements/FormSubmitBtn';
 import { useState } from 'react';
 
-export default function Signin({ toggle, setToggle }) {
+export default function Signup({ toggle, setToggle }) {
     const [success, setSuccess] = useState(false);
     const formik = useFormik({
         initialValues: {
@@ -28,7 +28,7 @@ export default function Signin({ toggle, setToggle }) {
     })
     return (
         <>
-            {success && (<div className={`bg-blue-200 p-3 animate-pulse rounded-md `}>User successfully registered</div>)}
+            {success && (<div className={`bg-blue-200 p-3 animate-pulse rounded-md`}>User successfully registered</div>)}
             <form onSubmit={formik.handleSubmit}>
                 <FormInput
                     type="text"

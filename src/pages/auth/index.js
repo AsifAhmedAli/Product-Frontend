@@ -3,19 +3,19 @@ import styled from 'styled-components';
 import styles from './Auth.module.css';
 import Signin from '../../components/auth/Signin';
 import Signup from '../../components/auth/Signup';
+import Image from 'next/image';
 
 export default function index() {
     const [toggle, setToggle] = useState(false);
     const handleToggle = () => setToggle(!toggle);
 
     return (
-        <main className="bg-authScreenBg sm:pb-0 pb-18 px-4 lg:px-0">
+        <main className="bg-authScreenBg sm:pb-0 pb-36 px-4 lg:px-0">
             <div className="container mx-auto grid sm:grid-cols-3 h-screen w-full pt-14 px-4 sm:pt-0 sm:px-0 sm:gap-4 sm:justify-center sm:items-center">
-                <div className={`hidden sm:block sm:col-span-1 lg:col-span-2 bg-black sm:shadow-lg sm:rounded-2xl md:w-6/7 md:h-6/7 sm:relative overflow-hidden relative z-40 ${styles.box}`}>
-                    <div className={`${styles.box_inner_circle} lg:w-98 lg:h-98 w-72 h-72 absolute bottom-8 right-6 bg-opacity-10 rounded-full z-40`}></div>
-                    <div className={`${styles.blur_circle_1} z-10 rounded-full`}></div>
-                    <div className={`${styles.blur_dot_1} z-10 rounded-full`}></div>
-                    <div className={`${styles.blur_dot_2} z-10 rounded-full`}></div>
+                <div className={`sm:col-span-1 lg:col-span-2 bg-black md:shadow-lg sm:rounded-2xl md:w-5/6 h-44 md:h-6/7 sm:relative overflow-hidden relative z-40 ${styles.box}`}>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <Image src='/auth_logo.png' alt="MEXIL" width={320} height={150} />
+                    </div>
                 </div>
                 <div className="px-4 sm:col-span-2 lg:col-span-1">
                     <AuthSwitcher toggle={toggle} onClick={handleToggle}></AuthSwitcher>
