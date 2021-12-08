@@ -1,0 +1,64 @@
+.sidebar{
+    width: 320px;
+    height: 100vh;
+    z-index: 80;   
+}
+
+.content{
+    max-width: 90%;
+    padding-top: 4rem;
+}
+
+.front,.welcome{
+    margin-left: 340px;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 60;
+}
+
+.welcome{
+    flex-wrap: wrap;
+}
+
+.market_card_btn{
+    
+}
+
+.market_card .box{
+    width: 10rem;
+}
+
+@media screen and (max-width: 1023px){
+    .content{
+        overflow: auto;
+        border-radius: 0;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 868px){
+    .welcome{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+
+    .welcome h1{
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    .welcome{
+        gap: 1rem;
+    }
+    .front,.welcome{
+        margin-left: 1px;
+    }
+}

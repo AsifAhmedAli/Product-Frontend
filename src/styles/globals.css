@@ -45,4 +45,8 @@ body::-webkit-scrollbar-thumb {
   max-width: 80%;
 }
 
+.primary-linear-gradient{
+  background: rgb(21, 93, 175);
+    background: linear-gradient(to bottom right, rgb(43, 123, 197), rgb(25, 9, 82));
+}
 

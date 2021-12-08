@@ -2,11 +2,6 @@
     text-indent: 2px;
 }
 
-.box{
-    background: linear-gradient(to bottom right, rgb(43, 123, 197), rgb(25, 9, 82));  /* fallback for old browsers */
-}
-
-
 .or_strike{
     display: block;
         text-align: center;
