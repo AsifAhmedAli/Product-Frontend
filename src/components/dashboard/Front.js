@@ -3,7 +3,7 @@ import styles from '../../pages/dashboard/Dashboard.module.css';
 
 export default function Front() {
     return (
-        <div className={`${styles.front} text-blue-500`}>
+        <div className={`${styles.front} text-blue-500 pb-14`}>
             <div className="flex items-center sm:justify-between mt-10 px-2 -mb-4 justify-center">
                 <h1 className="text-xl font-bold sm:mr-0 mr-4">Free</h1>
                 <button className={`${styles.see_more} px-4 py-1 rounded-xl`}>

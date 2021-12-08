@@ -3,7 +3,7 @@ import styles from '../../pages/dashboard/Dashboard.module.css';
 export default function Welcome() {
     return (
         <div className={`${styles.welcome} primary-linear-gradient relative z-40 flex items-center justify-center md:justify-between text-white rounded-lg px-8 mt-14 sm:py-4 py-8`}>
-            <div className="text-center my-4">
+            <div className="text-center lg:text-left my-4">
                 <h1 className="capitalize md:text-3xl font-bold text-2xl">Hello Awais</h1>
                 <p className="mt-2">Ready to start your investment !</p>
             </div>
