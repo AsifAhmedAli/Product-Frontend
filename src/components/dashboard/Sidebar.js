@@ -23,7 +23,7 @@ export default function Sidebar({ toggleSidebar, setToggleSidebar }) {
                             </div>
                         </Link>
                     </div>
-                    <div className="transition-all hover:shadow-md w-1/2 block mx-auto text-blue-500 hover:text-blue-700 text-left py-2 font-bold mb-6 rounded-lg">
+                    <div className="transition-all hover:shadow-md w-1/2 block mx-auto text-blue-500 hover:text-blue-700 text-left py-2 mb-6 rounded-lg">
                         <Link href="/">
                             <div className="pl-4 cursor-pointer flex items-center hover:text-blue-700">
                                 <i className="mx-2 fas fa-wallet pr-4 text-xl"></i>
@@ -31,7 +31,7 @@ export default function Sidebar({ toggleSidebar, setToggleSidebar }) {
                             </div>
                         </Link>
                     </div>
-                    <div className="transition-all hover:shadow-md w-1/2 block mx-auto text-blue-500 hover:text-blue-700 text-left py-2 font-bold mb-6 rounded-lg">
+                    <div className="transition-all hover:shadow-md w-1/2 block mx-auto text-blue-500 hover:text-blue-700 text-left py-2 mb-6 rounded-lg">
                         <Link href="/">
                             <div className="pl-4 cursor-pointer flex items-center">
                                 <i className="mx-2 fas fa-shopping-basket pr-4 text-xl"></i>
@@ -39,7 +39,7 @@ export default function Sidebar({ toggleSidebar, setToggleSidebar }) {
                             </div>
                         </Link>
                     </div>
-                    <div className="transition-all hover:shadow-md w-1/2 block mx-auto text-blue-500 hover:text-blue-700 text-left py-2 font-bold mb-6 rounded-lg">
+                    <div className="transition-all hover:shadow-md w-1/2 block mx-auto text-blue-500 hover:text-blue-700 text-left py-2 mb-6 rounded-lg">
                         <Link href="/">
                             <div className="pl-4 cursor-pointer flex items-center">
                                 <i className="mx-2 fas fa-comments pr-4 text-xl"></i>
@@ -47,7 +47,7 @@ export default function Sidebar({ toggleSidebar, setToggleSidebar }) {
                             </div>
                         </Link>
                     </div>
-                    <div className="transition-all hover:shadow-md w-1/2 block mx-auto text-blue-500 hover:text-blue-700 text-left py-2 font-bold mb-6 rounded-lg">
+                    <div className="transition-all hover:shadow-md w-1/2 block mx-auto text-blue-500 hover:text-blue-700 text-left py-2 mb-6 rounded-lg">
                         <Link href="/">
                             <div className="pl-4 cursor-pointer flex items-center">
                                 <i className="mx-2 fas fa-user-friends pr-4 text-xl"></i>

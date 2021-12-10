@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../../pages/dashboard/Dashboard.module.css';
 
-export default function Navbar({ toggleSidebar, setToggleSidebar }) {
+export default function Navbar({toggleSidebar, setToggleSidebar}) {
     // const [changeBg, setChangeBg] = useState(false);
     // useEffect(() => {
     //     if (typeof window !== undefined) {
@@ -35,6 +35,9 @@ export default function Navbar({ toggleSidebar, setToggleSidebar }) {
                         </Link>
                         <Link href="/market">
                             <i className="fas fa-user-circle text-blue-500 sm:mr-10 mr-6 cursor-pointer hover:text-black transition-colors"></i>
+                        </Link>
+                        <Link href="/market">
+                            <div className="inline bg-blue-300 text-blue-700 font-bold p-3 rounded-md">MJ</div>
                         </Link>
                     </div>
                 </div>
