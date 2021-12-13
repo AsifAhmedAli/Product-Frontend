@@ -1,52 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+@layer components {
+  .backgroundColor {
+    @apply bg-blue-50;
+  }
+
+  .navLink {
+    @apply px-6;
+  }
+
+  .textColorBlue {
+    @apply text-blue-800;
+  }
+
+  .gradientBlueBtn {
+    @apply bg-gradient-to-r from-blue-500 to-blue-800 text-white text-lg p-2 rounded-full;
+  }
+
+  .whiteBtn {
+    @apply text-lg p-2 rounded-full bg-white border border-blue-800;
+  }
+
+  .textHeading {
+    @apply text-5xl font-bold;
+  }
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/*a {*/
+/*  color: inherit;*/
+/*  text-decoration: none;*/
+/*}*/
 
-:root{
-  scrollbar-color: rgb(95, 147, 241) rgb(29, 85, 190);
-  scrollbar-width: thin;
-}
+/** {*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*  box-sizing: border-box;*/
+/*}*/
 
+/*:root{*/
+/*  scrollbar-color: rgb(95, 147, 241) rgb(29, 85, 190);*/
+/*  scrollbar-width: thin;*/
+/*}*/
 
-html,body{
-  font-family: 'Roboto', sans-serif, 'Font Awesome 5 Free', 'fontawesome';
-}
+/*html,body{*/
+/*  font-family: 'Roboto', sans-serif, 'Font Awesome 5 Free', 'fontawesome';*/
+/*}*/
 
-body::-webkit-scrollbar {
-  width: .5em;
-}
- 
-body::-webkit-scrollbar-track {
-  background-color: rgb(29, 85, 190); 
-}
+/*body::-webkit-scrollbar {*/
+/*  width: .5em;*/
+/*}*/
+/* */
+/*body::-webkit-scrollbar-track {*/
+/*  background-color: rgb(29, 85, 190); */
+/*}*/
 
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(95, 147, 241);
-}
+/*body::-webkit-scrollbar-thumb {*/
+/*  background-color: rgb(95, 147, 241);*/
+/*}*/
 
-.font_raleway{
-  font-family: 'Raleway', sans-serif;
-}
+/*.font_raleway{*/
+/*  font-family: 'Raleway', sans-serif;*/
+/*}*/
 
-.custom_container{
-  max-width: 80%;
-}
+/*.custom_container{*/
+/*  max-width: 80%;*/
+/*}*/
 
-.primary-linear-gradient{
-  background: rgb(21, 93, 175);
-    background: linear-gradient(to bottom right, rgb(43, 123, 197), rgb(25, 9, 82));
-}
-
+/*.primary-linear-gradient{*/
+/*  background: rgb(21, 93, 175);*/
+/*    background: linear-gradient(to bottom right, rgb(43, 123, 197), rgb(25, 9, 82));*/
+/*}*/
