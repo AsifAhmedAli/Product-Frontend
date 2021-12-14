@@ -39,7 +39,7 @@ import HomeBtn from "../../elements/HomeBtn"
 
 function Landing() {
   return (
-    <div className="m-14 md:m-32">
+    <div className="mb-6">
       {/* main */}
       <div className="grid grid-cols-1 lg:grid-cols-2 py-6">
         {/* grid  */}
