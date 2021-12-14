@@ -157,13 +157,13 @@ function Navbar() {
           objectFit="contain"
         />
       </div>
-      <div className="flex items-center justify-between textColorBlue px-4">
-        <p className="navLink">Home</p>
-        <p className="navLink">About</p>
-        <p className="navLink">What We Do</p>
-        <p className="navLink">How To Earn</p>
-        <p className="navLink">Pricing</p>
-        <p className="navLink">Contact Us</p>
+      <div className="flex flex-grow items-center justify-between textColorBlue px-14">
+        <p className="">Home</p>
+        <p className="">About</p>
+        <p className="">What We Do</p>
+        <p className="">How To Earn</p>
+        <p className="">Pricing</p>
+        <p className="">Contact Us</p>
       </div>
       <div className="flex items-center justify-between space-x-2 p-4 border rounded-full border-blue-800 textColorBlue">
         <button className="px-4">LOGIN</button>
