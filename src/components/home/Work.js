@@ -64,10 +64,10 @@ function Work() {
       {/* main */}
       <div className="grid grid-cols-1 lg:grid-cols-2 py-6">
         {/* grid  */}
-        <div className="mx-12 h-96">
+        <div className="flex items-center mx-auto h-96">
           {/* video */}
           <img
-            className="h-96"
+            className="h-80"
             src="/assets/Men_invest_and_have_made_a_profit.png"
           />
         </div>
