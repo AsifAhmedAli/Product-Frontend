@@ -34,11 +34,11 @@
   }
 
   .pricingCard1{
-    @apply flex flex-grow flex-col items-center justify-between bg-white rounded-lg p-12
+    @apply flex flex-grow flex-col items-center justify-between bg-white rounded-lg p-12 max-w-lg mx-auto mb-6
   }
 
   .pricingCard1 >p {
-    @apply p-2
+    @apply p-2 
   }
 
   .pricingBtn1{
@@ -46,7 +46,7 @@
   }
 
  .pricingCard2{
-    @apply flex flex-grow flex-col items-center justify-between bg-gradient-to-r from-blue-900 via-blue-600 to-blue-900 text-white rounded-lg p-12
+    @apply flex flex-grow flex-col items-center justify-between bg-gradient-to-r from-blue-900 via-blue-600 to-blue-900 text-white rounded-lg p-12 max-w-lg mx-auto mb-6
   }
 
   .pricingCard2 >p {
@@ -55,6 +55,14 @@
 
   .pricingBtn2{
     @apply px-16 py-2 my-4 rounded-full bg-white
+  }
+
+  .about{
+    @apply flex flex-grow flex-col items-center justify-between bg-gradient-to-r from-blue-900 via-blue-600 to-blue-900 text-white rounded-lg p-12
+  }
+
+  .aboutInput{
+    @apply h-12 bg-transparent border-b-2 border-white text-white
   }
 
 
