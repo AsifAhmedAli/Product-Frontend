@@ -22,7 +22,7 @@ function HomeBtn({ text, background }) {
           <i className="far fa-paper-plane textColorBlue p-2 rounded-full bg-white" />
         </div>
       ) : (
-        <div className="transparentBtn textColorBlue flex items-center space-x-4 cursor-pointer py-1">
+        <div className={`${background =="white" ? "bg-white":""} transparentBtn textColorBlue flex items-center space-x-4 cursor-pointer py-1`}>
           <p>{text}</p>
           <i className="far fa-paper-plane text-white p-2 rounded-full bg-blue-900" />
         </div>

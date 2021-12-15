@@ -48,8 +48,8 @@ function About() {
             name=""
             id=""
           />
-          <div className="w-40 bg-white h-11 rounded-full">
-            <HomeBtn text="Contact Us" />
+          <div className="w-40 h-11 rounded-full">
+            <HomeBtn background="white" text="Contact Us" />
           </div>
         </div>
       </div>
