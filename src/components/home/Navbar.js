@@ -150,12 +150,7 @@ function Navbar() {
   return (
     <div className="flex justify-between w-full p-4 space-x-6">
       <div className="relative w-36 h-12">
-        <Image
-          src="https://images.unsplash.com/photo-1496200186974-4293800e2c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
-          alt="logo image"
-          layout="fill"
-          objectFit="contain"
-        />
+        <img src="/assets/logo.png" alt="" />
       </div>
       <div className="flex flex-grow items-center justify-between textColorBlue px-14">
         <p className="">Home</p>
