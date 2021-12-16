@@ -30,7 +30,7 @@
   }
 
   .earningCard{
-    @apply flex flex-col justify-between h-56 bg-white rounded-lg py-8 px-12
+    @apply flex flex-col justify-between bg-white rounded-lg py-8 px-12
   }
 
   .pricingCard1{
@@ -65,6 +65,13 @@
     @apply h-12 bg-transparent border-b-2 border-white text-white
   }
 
+  .smallScreenNavLink{
+    @apply p-4 border-b-2 border-white
+  }
+  
+  .smallNavSession{
+    @apply p-4 border-b-2 border-white
+  }
 
 }
 
