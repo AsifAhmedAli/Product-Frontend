@@ -17,7 +17,7 @@ export default function index() {
                     </div>
                 </div>
                 <div className="px-4 sm:col-span-2 lg:col-span-1">
-                    <AuthSwitcher toggle={toggle} onClick={handleToggle}></AuthSwitcher>
+                    {/* <AuthSwitcher toggle={toggle} onClick={handleToggle}></AuthSwitcher> */}
                     {
                         toggle ?
                             <Signup setToggle={setToggle} toggle={toggle} /> :

@@ -27,59 +27,88 @@ export default function Signup({ toggle, setToggle }) {
         }
     })
     return (
-        <>
-            {success && (<div className={`bg-blue-200 p-3 animate-pulse rounded-md`}>User successfully registered</div>)}
-            <form onSubmit={formik.handleSubmit}>
-                <FormInput
-                    type="text"
-                    name="username"
-                    placeholder="&#xf007; &nbsp; Enter your Username"
-                    onChange={formik.handleChange}
-                    value={formik.values.username}
-                    onBlur={formik.handleBlur}
-                    required={true}
-                    errors={formik.errors.username && formik.touched.username && formik.errors.username}
-                />
-                <FormInput
-                    type="email"
-                    name="email"
-                    placeholder="&#xf007; &nbsp; Enter your Email"
-                    onChange={formik.handleChange}
-                    value={formik.values.email}
-                    onBlur={formik.handleBlur}
-                    required={true}
-                    errors={formik.errors.email && formik.touched.email && formik.errors.email}
-                />
-                <FormInput
-                    type="password"
-                    name="password"
-                    placeholder="&#xf023; &nbsp; Enter your Password"
-                    onChange={formik.handleChange}
-                    value={formik.values.password}
-                    onBlur={formik.handleBlur}
-                    required={true}
-                    errors={formik.errors.password && formik.touched.password && formik.errors.password}
-                />
-                <FormInput
-                    type="password"
-                    name="confirmPassword"
-                    placeholder="&#xf023; &nbsp; Confirm your Password"
-                    onChange={formik.handleChange}
-                    value={formik.values.confirmPassword}
-                    onBlur={formik.handleBlur}
-                    required={true}
-                    errors={formik.errors.confirmPassword && formik.touched.confirmPassword && formik.errors.confirmPassword}
-                />
+      <>
+        {success && (
+          <div className={`bg-blue-200 p-3 animate-pulse rounded-md`}>
+            User successfully registered
+          </div>
+        )}
+        <form onSubmit={formik.handleSubmit}>
+          <h1 className="textColorBlue font-bold my-4">Welcome Back</h1>
+          <p className="text-xs mb-6">
+            We make it easy for everyone to maximize their investment
+          </p>
 
-                {formik.isSubmitting ? <FormSubmitBtn type="submit" value="SIGN UP" loading /> : <FormSubmitBtn type="submit" value="SIGN UP" />}
+          <FormInput
+            type="text"
+            name="username"
+            placeholder="&#xf007; &nbsp; Enter your Username"
+            onChange={formik.handleChange}
+            value={formik.values.username}
+            onBlur={formik.handleBlur}
+            required={true}
+            errors={
+              formik.errors.username &&
+              formik.touched.username &&
+              formik.errors.username
+            }
+          />
+          <FormInput
+            type="email"
+            name="email"
+            placeholder="&#xf007; &nbsp; Enter your Email"
+            onChange={formik.handleChange}
+            value={formik.values.email}
+            onBlur={formik.handleBlur}
+            required={true}
+            errors={
+              formik.errors.email && formik.touched.email && formik.errors.email
+            }
+          />
+          <FormInput
+            type="password"
+            name="password"
+            placeholder="&#xf023; &nbsp; Enter your Password"
+            onChange={formik.handleChange}
+            value={formik.values.password}
+            onBlur={formik.handleBlur}
+            required={true}
+            errors={
+              formik.errors.password &&
+              formik.touched.password &&
+              formik.errors.password
+            }
+          />
+          <FormInput
+            type="password"
+            name="confirmPassword"
+            placeholder="&#xf023; &nbsp; Confirm your Password"
+            onChange={formik.handleChange}
+            value={formik.values.confirmPassword}
+            onBlur={formik.handleBlur}
+            required={true}
+            errors={
+              formik.errors.confirmPassword &&
+              formik.touched.confirmPassword &&
+              formik.errors.confirmPassword
+            }
+          />
 
-                <a
-                    className="cursor-pointer text-center block w-full"
-                    onClick={e => setToggle(!toggle)}>Already have an account? Sign in instead
-                </a>
+          {formik.isSubmitting ? (
+            <FormSubmitBtn type="submit" value="Create Profile" loading />
+          ) : (
+            <FormSubmitBtn type="submit" value="Create Profile" />
+          )}
 
-                <SocialLogin />
-            </form>
-        </>
+          <a
+            className="cursor-pointer text-center block w-full"
+            onClick={(e) => setToggle(!toggle)}
+          >
+            Already have an account? Sign in instead
+          </a>
+
+          <SocialLogin />
+        </form>
+      </>
     )
 }
