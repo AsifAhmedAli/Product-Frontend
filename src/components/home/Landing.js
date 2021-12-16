@@ -3,6 +3,7 @@
 
 import HomeBtn from "../../elements/HomeBtn"
 
+
 // export default function Landing() {
 //     return (
 //         <section className="py-14 md:py-14 lg:pt-0 lg:pb-24 h-auto sm:pr-0 relative z-40 px-4">
