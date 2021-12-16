@@ -145,25 +145,102 @@
 // export default Navbar;
 //
 import Image from "next/image"
+import { useState } from "react"
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false)
+  const [isOpenSession, setIsOpenSession] = useState(false)
+  const [session, setSession] = useState(true)
   return (
-    <div className="flex justify-between w-full p-4 space-x-6">
-      <div className="relative w-36 h-12">
-        <img src="/assets/logo.png" alt="" />
+    <div className="">
+      <div className="grid grid-cols-3 gap-4">
+        {/* grid */}
+        <div className="">
+          <img
+            className="h-24 w-64 object-contain"
+            src="/assets/logo.png"
+            alt=""
+          />
+        </div>
+        <div className="col-span-2 py-4">
+          <div className="lg:hidden text-right align-middle text-3xl textColorBlue">
+            <i
+              className="fas fa-bars border p-2 rounded-lg border-blue-800 cursor-pointer"
+              onClick={() => setIsOpen(!isOpen)}
+            ></i>
+          </div>
+          <div className="hidden lg:flex items-center justify-between textColorBlue">
+            <p className="">Home</p>
+            <p className="">About</p>
+            <p className="">What We Do</p>
+            <p className="">How To Earn</p>
+            <p className="">Pricing</p>
+            <p className="">Contact Us</p>
+
+            {session ? (
+              <div>
+                <div
+                  className="inline bg-blue-300 text-blue-700 font-bold p-3 rounded-md cursor-pointer"
+                  onClick={() => setIsOpenSession(!isOpenSession)}
+                >
+                  MJ
+                </div>
+                {isOpenSession && (
+                  <div className="absolute mt-4 -ml-36 flex flex-col textColorBlue w-48 bg-blue-100 rounded-lg align-middle">
+                    <p className="smallNavSession">Profile</p>
+                    <p className="smallNavSession">Dashboard</p>
+                    <p className="p-4">Settings</p>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className="flex items-center justify-between space-x-2 p-4 border rounded-full border-blue-800 textColorBlue h-12 my-auto">
+                <button className="">LOGIN</button>
+                <i className="fas fa-arrow-right"></i>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
-      <div className="flex flex-grow items-center justify-between textColorBlue px-14">
-        <p className="">Home</p>
-        <p className="">About</p>
-        <p className="">What We Do</p>
-        <p className="">How To Earn</p>
-        <p className="">Pricing</p>
-        <p className="">Contact Us</p>
-      </div>
-      <div className="flex items-center justify-between space-x-2 p-4 border rounded-full border-blue-800 textColorBlue">
-        <button className="px-4">LOGIN</button>
-        <i className="fas fa-arrow-right"></i>
-      </div>
+      {isOpen && (
+        <div className="sm:flex lg:hidden flex-col textColorBlue">
+          <p className="smallScreenNavLink">Home</p>
+          <p className="smallScreenNavLink">About</p>
+          <p className="smallScreenNavLink">What We Do</p>
+          <p className="smallScreenNavLink">How To Earn</p>
+          <p className="smallScreenNavLink">Pricing</p>
+          <p className="smallScreenNavLink">Contact Us</p>
+          {session ? (
+            <div>
+              <p
+                className="w-12 bg-blue-300 text-blue-700 font-bold p-3 rounded-md cursor-pointer"
+                onClick={() => setIsOpenSession(!isOpenSession)}
+              >
+                MJ
+              </p>
+              {isOpenSession && (
+                <div className="absolute mt-4 flex flex-col textColorBlue w-48 bg-blue-100 rounded-lg align-middle">
+                  <p className="smallNavSession">Profile</p>
+                  <p className="smallNavSession">Dashboard</p>
+                  <p className="p-4">Settings</p>
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="flex items-center justify-between space-x-2 p-4 border rounded-full border-blue-800 textColorBlue h-12 my-auto">
+              <button className="">LOGIN</button>
+              <i className="fas fa-arrow-right"></i>
+            </div>
+          )}
+        </div>
+      )}
+      {/* {isOpenSession && (
+        <div className="flex flex-col textColorBlue w-48 bg-blue-100 rounded-lg align-middle">
+          <p className="smallNavSession">Profile</p>
+          <p className="smallNavSession">Dashboard</p>
+          <p className="p-4">Settings</p>
+        </div>
+      )} */}
     </div>
   )
 }
