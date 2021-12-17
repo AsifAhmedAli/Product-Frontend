@@ -24,23 +24,31 @@ import PricingCard from "./PricingCard"
 // }
 function Pricing() {
   return (
-    <div className="textColorBlue">
-      <div className="flex flex-col items-center justify-between">
-        <div className="textHeading">
-          {/* heading */}
-          <p>Simple Pricing, All The Features</p>
+    <div className="relative">
+      <img
+        className="absolute -top-64 -left-96 z-0"
+        src="/assets/blob.svg"
+        alt=""
+      />
+      <div className="relative textColorBlue mb-32">
+        <div className="flex flex-col items-center justify-between">
+          <div className="textHeading">
+            {/* heading */}
+            <p>Simple Pricing, All The Features</p>
+          </div>
+          <div className="m-6 mb-12 flex flex-col items-center justify-between">
+            {/* subheading */}
+            <p>Develop a website by ﬁnding a product identity that has value</p>
+            <p>and branding to become a character of a company</p>
+          </div>
         </div>
-        <div className="m-6 flex flex-col items-center justify-between">
-          {/* subheading */}
-          <p>Develop a website by ﬁnding a product identity that has value</p>
-          <p>and branding to become a character of a company</p>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          {/* grid */}
+          <PricingCard type="Free" price="0" color="white" />
+          <PricingCard type="Standard" price="50" />
+          <PricingCard type="Premium" price="100" color="white" />
         </div>
       </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">{/* grid */}
-          <PricingCard type="Free" price="0" color="white"/>
-          <PricingCard type="Standard" price="50" />
-          <PricingCard type="Premium" price="100" color="white"/>
-          </div>
     </div>
   )
 }

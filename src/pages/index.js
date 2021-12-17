@@ -10,7 +10,7 @@ import Earning from '../components/home/Earning';
 
 export default function Home() {
   return (
-    <main className="p-6 max-w-6xl mx-5 lg:mx-auto">
+    <main className="sm:p-0 md:p-6 max-w-6xl mx-5 lg:mx-auto overflow-hidden">
       <Navbar />
       <Landing />
       {/* <Brands /> */}

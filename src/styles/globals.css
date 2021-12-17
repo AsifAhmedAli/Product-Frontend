@@ -58,7 +58,7 @@
   }
 
   .about{
-    @apply flex flex-grow flex-col items-center justify-between bg-gradient-to-r from-blue-900 via-blue-600 to-blue-900 text-white rounded-lg p-12
+    @apply flex flex-grow flex-col items-center justify-between bg-gradient-to-r from-blue-900 via-blue-600 to-blue-900 text-white rounded-lg sm:p-6 md:p-12
   }
 
   .aboutInput{

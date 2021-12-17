@@ -3,7 +3,6 @@
 
 import HomeBtn from "../../elements/HomeBtn"
 
-
 // export default function Landing() {
 //     return (
 //         <section className="py-14 md:py-14 lg:pt-0 lg:pb-24 h-auto sm:pr-0 relative z-40 px-4">
@@ -40,11 +39,11 @@ import HomeBtn from "../../elements/HomeBtn"
 
 function Landing() {
   return (
-    <div className="mb-6">
+    <div className="sm:mb-48 lg:mb-80">
       {/* main */}
       <div className="grid grid-cols-1 lg:grid-cols-2 py-6">
         {/* grid  */}
-        <div className="flex flex-col justify-between textColorBlue h-96 m-4">
+        <div className="flex flex-col justify-between textColorBlue h-96 m-4 mb-12">
           {/* text section */}
           <div className="textHeading">
             {/* heading */}
@@ -64,18 +63,25 @@ function Landing() {
             <HomeBtn text="Introductory Video" />
           </div>
         </div>
-        <div className="rounded-lg h-96">
-          {/* video */}
-          <iframe
-            className="rounded-lg shadow-2xl"
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/8FqlTslU22s"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+        <div className="relative">
+          <img
+            className="absolute -top-24 z-0"
+            src="/assets/blob.svg"
+            alt=""
+          />
+          <div className="relative rounded-lg h-96">
+            {/* video */}
+            <iframe
+              className="rounded-lg shadow-2xl object-contain"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/8FqlTslU22s"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>

@@ -60,36 +60,43 @@ import Image from "next/image"
 // }
 function Work() {
   return (
-    <div className="mb-6">
-      {/* main */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 py-6">
-        {/* grid  */}
-        <div className="flex items-center mx-auto h-96">
-          {/* video */}
-          <img
-            className="h-80"
-            src="/assets/Men_invest_and_have_made_a_profit.png"
-          />
-        </div>
-        <div className="flex flex-col justify-between textColorBlue h-96 m-4">
-          {/* text section */}
-          <div className="textHeading">
-            {/* heading */}
-            <p>What we do</p>
+    <div className="relative">
+      <img
+        className="absolute -top-96 -left-96 z-0"
+        src="/assets/blob.svg"
+        alt=""
+      />
+      <div className="relative mb-32">
+        {/* main */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 py-6">
+          {/* grid  */}
+          <div className="flex items-center mx-auto h-96">
+            {/* video */}
+            <img
+              className="h-80"
+              src="/assets/Men_invest_and_have_made_a_profit.png"
+            />
           </div>
-          <div>
-            {/* subheading */}
-            <p>
-              Develop a website by ﬁnding a product identity that has value and
-              branding to become a character of a company. We will also
-              facilitate the business marketing of this products with our SEO
-              expert so that they become a ready-to-use website and help sell a
-              product from the company
-            </p>
-          </div>
-          <div className="flex items-center space-x-4">
-            {/* buttons */}
-            <HomeBtn text="Learn More" />
+          <div className="flex flex-col justify-between textColorBlue h-96 m-4">
+            {/* text section */}
+            <div className="textHeading">
+              {/* heading */}
+              <p>What we do</p>
+            </div>
+            <div>
+              {/* subheading */}
+              <p>
+                Develop a website by ﬁnding a product identity that has value
+                and branding to become a character of a company. We will also
+                facilitate the business marketing of this products with our SEO
+                expert so that they become a ready-to-use website and help sell
+                a product from the company
+              </p>
+            </div>
+            <div className="flex items-center space-x-4">
+              {/* buttons */}
+              <HomeBtn text="Learn More" />
+            </div>
           </div>
         </div>
       </div>
