@@ -24,7 +24,9 @@ export default function Signin({ setToggle, toggle }) {
     return (
       <form onSubmit={formik.handleSubmit}>
         <h1 className="textColorBlue font-bold my-4">Welcome Back</h1>
-        <p className="text-xs mb-6">We make it easy for everyone to maximize their investment</p>
+        <p className="text-xs mb-6">
+          We make it easy for everyone to maximize their investment
+        </p>
 
         <FormInput
           type="email"
@@ -37,6 +39,7 @@ export default function Signin({ setToggle, toggle }) {
           errors={
             formik.errors.email && formik.touched.email && formik.errors.email
           }
+          icon="far fa-user"
         />
         <FormInput
           type="password"
@@ -51,6 +54,7 @@ export default function Signin({ setToggle, toggle }) {
             formik.touched.password &&
             formik.errors.password
           }
+          icon="fas fa-lock"
         />
 
         <label className="text-sm pt-10 flex text-black items-center justify-between">
@@ -76,7 +80,7 @@ export default function Signin({ setToggle, toggle }) {
           className=" w-full cursor-pointer text-center block"
           onClick={(e) => setToggle(!toggle)}
         >
-          New on our platform? Create an account
+          New on our platform? <span className="underline">Create an account</span>
         </a>
 
         <SocialLogin />

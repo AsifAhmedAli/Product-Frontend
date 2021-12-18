@@ -52,6 +52,22 @@ export default function Signup({ toggle, setToggle }) {
               formik.touched.username &&
               formik.errors.username
             }
+            icon="far fa-user"
+          />
+          <FormInput
+            type="text"
+            name="fullname"
+            placeholder="&#xf007; &nbsp; Enter your fullname"
+            onChange={formik.handleChange}
+            value={formik.values.fullname}
+            onBlur={formik.handleBlur}
+            required={true}
+            errors={
+              formik.errors.fullname &&
+              formik.touched.fullname &&
+              formik.errors.fullname
+            }
+            icon="far fa-user"
           />
           <FormInput
             type="email"
@@ -64,6 +80,7 @@ export default function Signup({ toggle, setToggle }) {
             errors={
               formik.errors.email && formik.touched.email && formik.errors.email
             }
+            icon="far fa-envelope"
           />
           <FormInput
             type="password"
@@ -78,6 +95,7 @@ export default function Signup({ toggle, setToggle }) {
               formik.touched.password &&
               formik.errors.password
             }
+            icon="fas fa-lock"
           />
           <FormInput
             type="password"
@@ -92,6 +110,7 @@ export default function Signup({ toggle, setToggle }) {
               formik.touched.confirmPassword &&
               formik.errors.confirmPassword
             }
+            icon="fas fa-key"
           />
 
           {formik.isSubmitting ? (
@@ -104,7 +123,8 @@ export default function Signup({ toggle, setToggle }) {
             className="cursor-pointer text-center block w-full"
             onClick={(e) => setToggle(!toggle)}
           >
-            Already have an account? Sign in instead
+            Already have an account?{" "}
+            <span className="underline textColorBlue">Sign In </span>instead
           </a>
 
           <SocialLogin />
