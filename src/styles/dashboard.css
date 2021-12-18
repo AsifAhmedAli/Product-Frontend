@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebarLink {
+    @apply flex items-center space-x-6 cursor-pointer p-6 m-2 rounded-lg hover:shadow-lg hover:scale-105 duration-100 transition transform ease-out;
+  }
+
+  .friendBtn1 {
+    @apply px-4 py-2 my-4 rounded-full bg-blue-900 text-white;
+  }
+
+  .friendBtn2 {
+    @apply px-4 py-2 my-4 rounded-full bg-white border border-blue-900;
+  }
+}
