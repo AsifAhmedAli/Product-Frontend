@@ -146,6 +146,7 @@
 //
 import Image from "next/image"
 import { useState } from "react"
+import Link from 'next/link';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -158,7 +159,7 @@ function Navbar() {
         src="/assets/blob2.svg"
         alt=""
       />
-      <div className="relative mb-32">
+      <div className="mb-32">
         <div className="grid grid-cols-3 gap-4">
           {/* grid */}
           <img
@@ -192,7 +193,10 @@ function Navbar() {
                   {isOpenSession && (
                     <div className="absolute mt-4 -ml-36 flex flex-col textColorBlue w-48 bg-blue-100 rounded-lg align-middle">
                       <p className="smallNavSession">Profile</p>
+                      <Link href="/dashboard">
+                        
                       <p className="smallNavSession">Dashboard</p>
+                        </Link>
                       <p className="p-4">Settings</p>
                     </div>
                   )}
