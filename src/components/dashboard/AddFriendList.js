@@ -1,9 +1,8 @@
-import FriendCard from "./FriendCard"
-import FrontCard from "./FrontCard"
+import AddFriend from "./AddFriend"
 
-function FriendsList() {
+function AddFriendList() {
   return (
-    <div className="textColorBlue my-3">
+    <div className="textColorBlue my-4">
       <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="bg-white space-x-4 p-2 w-max rounded-lg mb-2">
           {/* search */}
@@ -20,43 +19,58 @@ function FriendsList() {
           <span>Add new friends</span>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-4 ">
-        <FriendCard
+      <div className="my-4 changeBackground">
+        <AddFriend
           image="https://images.unsplash.com/photo-1636308071574-67770df28a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-          alt="not found"
-          name="Elza Patel"
+          name="Elza"
+          active="1 hour"
         />
-        <FriendCard
+        <AddFriend
           image="https://images.unsplash.com/photo-1636308071574-67770df28a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-          alt="not found"
           name="Murazik"
-          online={true}
+          active="2 hour"
         />
-        <FriendCard
+        <AddFriend
           image="https://images.unsplash.com/photo-1636308071574-67770df28a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-          alt="not found"
           name="Gianni"
-          online={true}
+          active="13 hours"
         />
-        <FriendCard
+        <AddFriend
           image="https://images.unsplash.com/photo-1636308071574-67770df28a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-          alt="not found"
-          name="Stacie"
-        />
-        <FriendCard
-          image="https://images.unsplash.com/photo-1636308071574-67770df28a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-          alt="not found"
-          name="Calhoun"
-          online={true}
-        />
-        <FriendCard
-          image="https://images.unsplash.com/photo-1636308071574-67770df28a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-          alt="not found"
           name="Mark"
+          active="2 days"
         />
+        <AddFriend
+          image="https://images.unsplash.com/photo-1636308071574-67770df28a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+          name="Calhoun"
+          active="3 days"
+        />
+        <AddFriend
+          image="https://images.unsplash.com/photo-1636308071574-67770df28a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+          name="Elza"
+          active="1 hour"
+        />
+        <AddFriend
+          image="https://images.unsplash.com/photo-1636308071574-67770df28a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+          name="Elza"
+          active="1 hour"
+        />
+        <AddFriend
+          image="https://images.unsplash.com/photo-1636308071574-67770df28a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+          name="Elza"
+          active="1 hour"
+        />
+        <AddFriend
+          image="https://images.unsplash.com/photo-1636308071574-67770df28a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+          name="Elza"
+          active="1 hour"
+        />
+      </div>
+      <div className="flex justify-center my-4">
+        <button className="loadMoreBtn">Load More...</button>
       </div>
     </div>
   )
 }
 
-export default FriendsList
+export default AddFriendList

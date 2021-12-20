@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 function FriendCard({ image, name, online }) {
   return (
     <div className="bg-white p-2 md:p-4 rounded-lg">
@@ -20,7 +22,9 @@ function FriendCard({ image, name, online }) {
         <p>{name}</p>
         <div className="flex flex-col md:flex-row md:space-x-4">
           <button className="friendBtn1">Message</button>
+          <Link href="/challengeFriend">
           <button className="friendBtn2">Challenge</button>
+          </Link>
         </div>
       </div>
     </div>
