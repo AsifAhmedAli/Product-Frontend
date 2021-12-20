@@ -1,9 +1,9 @@
-import BuyStars from "../components/dashboard/BuyStars"
+import EarningHistoryList from "../components/dashboard/EarningHistoryList"
 import Navbar from "../components/dashboard/Navbar"
 import Sidebar from "../components/dashboard/Sidebar"
 import Welcome from "../components/dashboard/Welcome"
 
-function stars() {
+function earning() {
   return (
     <main className="sm:p-0 md:p-6 max-w-6xl mx-5 lg:mx-auto overflow-hidden">
       <div>
@@ -12,7 +12,7 @@ function stars() {
           <Sidebar />
           <div className="grid grid-cols-1 w-full">
             <Welcome />
-            <BuyStars />
+            <EarningHistoryList />
           </div>
         </div>
       </div>
@@ -20,4 +20,4 @@ function stars() {
   )
 }
 
-export default stars
+export default earning

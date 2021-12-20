@@ -14,4 +14,24 @@
   .friendBtn2 {
     @apply px-4 py-2 my-4 rounded-full bg-white border border-blue-900;
   }
+
+  .addFriendBtn1 {
+    @apply px-4 py-2 rounded-lg bg-white w-max md:w-24 lg:w-28;
+  }
+
+  .addFriendBtn2 {
+    @apply px-4 py-2 rounded-lg bg-blue-900 text-white w-max md:w-24 lg:w-28;
+  }
+
+  .changeBackground > div:nth-child(odd) {
+    @apply bg-blue-200;
+  }
+
+  .changeBackground > div:nth-child(odd) > .activeStatus {
+    @apply text-white;
+  }
+
+  .loadMoreBtn{
+    @apply px-6 py-2 rounded-lg bg-white w-max shadow-md;
+  }
 }

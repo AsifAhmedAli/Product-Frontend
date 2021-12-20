@@ -107,7 +107,7 @@ function Sidebar() {
       </div>
       <div className="-mt-12 lg:hidden align-middle text-3xl textColorBlue">
         <i
-          className="fas fa-bars border p-2 rounded-lg border-blue-800 cursor-pointer"
+          className="text-sm md:text-xl fas fa-bars border p-2 rounded-lg border-blue-800 cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         ></i>
         {/* </div> */}
