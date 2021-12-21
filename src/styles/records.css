@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .blueBackground{
+        @apply bg-gradient-to-r from-blue-900 to-blue-700 text-white
+    }
+
+    .table td{
+        @apply py-4 border-b border-blue-800
+    }
+}

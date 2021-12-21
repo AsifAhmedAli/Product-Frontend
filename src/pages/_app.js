@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/dashboard.css'
+import '../styles/records.css'
 import Meta from '../layout/Meta';
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
