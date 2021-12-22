@@ -3,11 +3,22 @@
 @tailwind utilities;
 
 @layer components {
-    .blueBackground{
-        @apply bg-gradient-to-r from-blue-900 to-blue-700 text-white
-    }
+  .blueBackground {
+    @apply bg-gradient-to-r from-blue-900 to-blue-700 text-white;
+  }
 
-    .table td{
-        @apply py-4 border-b border-blue-800
-    }
+  .table td {
+    @apply py-4 border-b border-blue-800;
+  }
+
+  .editRecord {
+    @apply py-2 border-b border-blue-900 space-x-4;
+  }
+
+  input:checked ~ .dot {
+    @apply transform translate-x-full bg-blue-900;
+  }
+  input:checked ~ .grayBg {
+    @apply bg-gray-200;
+  }
 }
