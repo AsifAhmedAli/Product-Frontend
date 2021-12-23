@@ -1,34 +1,28 @@
 import { useState } from "react"
 
-function UsersRecord({ id, name, status, date }) {
+function StarsRecord({ id, name, status }) {
   const [isOpenAction, setIsOpenAction] = useState(false)
   return (
-    <tr className="relative text-center mb-2">
+    <tr className="text-center mb-2">
       <td className="">#{id}</td>
       <td>{name}</td>
       <td>{status}</td>
-      <td>{date}</td>
-      <td>
+      <td className="flex items-center space-x-2">
         <button className="bg-blue-200 py-1 px-5 rounded-lg shadow ">
-          View
+          100
         </button>
-      </td>
-      <td>
-        <button className="bg-red-200 py-1 px-5 rounded-lg shadow ">
-          View
+        <button className="bg-blue-200 py-1 px-5 rounded-lg shadow ">
+          200
         </button>
-      </td>
-
-      <td>
-        <div className="flex items-center justify-center w-full ">
-          <label htmlFor={id} className="flex items-center cursor-pointer">
-            <div className="relative">
-              <input type="checkbox" id={id} className="sr-only" />
-              <div className="grayBg block bg-blue-900 w-14 h-8 rounded-full"></div>
-              <div className="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
-            </div>
-          </label>
-        </div>
+        <button className="bg-blue-200 py-1 px-5 rounded-lg shadow ">
+          400
+        </button>
+        <button className="bg-blue-200 py-1 px-5 rounded-lg shadow ">
+          400
+        </button>
+        <button className="bg-blue-200 py-1 px-5 rounded-lg shadow ">
+          Customs
+        </button>
       </td>
       <td>
         <i
@@ -56,4 +50,4 @@ function UsersRecord({ id, name, status, date }) {
   )
 }
 
-export default UsersRecord
+export default StarsRecord

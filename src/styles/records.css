@@ -8,7 +8,7 @@
   }
 
   .table td {
-    @apply py-4 border-b border-blue-800;
+    @apply py-4 border-b border-blue-800 p-4;
   }
 
   .editRecord {
@@ -18,7 +18,9 @@
   input:checked ~ .dot {
     @apply transform translate-x-full bg-blue-900;
   }
+
   input:checked ~ .grayBg {
     @apply bg-gray-200;
   }
+
 }
