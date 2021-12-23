@@ -7,7 +7,7 @@ function StarsRecord({ id, name, status }) {
       <td className="">#{id}</td>
       <td>{name}</td>
       <td>{status}</td>
-      <td className="flex items-center space-x-2">
+      <td className="flex items-center justify-between">
         <button className="bg-blue-200 py-1 px-5 rounded-lg shadow ">
           100
         </button>
