@@ -24,13 +24,8 @@ import PricingCard from "./PricingCard"
 // }
 function Pricing() {
   return (
-    <div className="relative">
-      <img
-        className="absolute -top-64 -left-96 z-0"
-        src="/assets/blob.svg"
-        alt=""
-      />
-      <div className="relative textColorBlue mb-32">
+    <div className="relative py-24" id="home_pricing">
+      <div className="relative textColorBlue container mx-auto">
         <div className="flex flex-col items-center justify-between">
           <div className="textHeading">
             {/* heading */}

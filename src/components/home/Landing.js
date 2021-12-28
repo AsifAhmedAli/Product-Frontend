@@ -2,9 +2,9 @@ import HomeBtn from "../../elements/HomeBtn"
 
 function Landing() {
   return (
-    <div className="sm:mb-48 lg:mb-80">
+    <div className="relative py-20 z-10">
       {/* main */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 py-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 container mx-auto">
         {/* grid  */}
         <div className="flex flex-col justify-between textColorBlue h-96 m-4 mb-12">
           {/* text section */}
@@ -27,11 +27,11 @@ function Landing() {
           </div>
         </div>
         <div className="relative">
-          <img
+          {/* <img
             className="absolute -top-24 z-0"
             src="/assets/blob.svg"
             alt=""
-          />
+          /> */}
           <div className="relative rounded-lg h-96">
             {/* video */}
             <iframe

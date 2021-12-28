@@ -22,7 +22,7 @@ import HomeBtn from "../../elements/HomeBtn"
 // }
 function About() {
   return (
-    <div className="about my-36">
+    <div className="about my-36 container mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-3 px-10 py-6 gap-4">
         {/* grid */}
         <div className="flex flex-col items-center justify-between">

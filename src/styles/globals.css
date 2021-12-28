@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
   body {
     @apply bg-blue-50;
@@ -72,8 +73,36 @@
   .smallNavSession{
     @apply p-4 border-b-2 border-white
   }
+  
+  #home_work{
+    background-image: url('../../public/assets/blob.svg');
+    background-repeat: no-repeat;
+    background-position: -20% -20rem;
+    background-size: 50%; 
+  }
 
+  #home_earning{
+    background-image: url('../../public/assets/blob.svg');
+    background-repeat: no-repeat;
+    background-position: right -17rem top -20rem;
+    background-size: 50%; 
+  }
+
+  #home_pricing{
+    background-image: url('../../public/assets/blob.svg');
+    background-repeat: no-repeat;
+    background-position: right -15rem top 15rem;
+    background-size: 50%;
+  }
+
+  #home_navbar{
+    background-image: url('../../public/assets/blob2.svg');
+    background-repeat: no-repeat;
+    background-position: left -10rem top -7rem;
+    background-size: 20%;
+  }
 }
+
 
 /*a {*/
 /*  color: inherit;*/

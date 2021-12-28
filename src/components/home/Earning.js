@@ -2,18 +2,13 @@ import EarningCard from "./EarningCard"
 
 function Earning() {
   return (
-    <div className="textColorBlue">
-      <div className="mb-24">
+    <div className="textColorBlue py-24" id="home_earning">
+      <div className="container mx-auto">
         <div className="textHeading">
           {/* heading */}
           <p>How To Earn</p>
         </div>
         <div className="relative">
-          <img
-            className="absolute -top-96 -right-96 z-0"
-            src="/assets/blob.svg"
-            alt=""
-          />
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-12">
             {/* grid */}
 

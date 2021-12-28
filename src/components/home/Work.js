@@ -60,15 +60,10 @@ import Image from "next/image"
 // }
 function Work() {
   return (
-    <div className="relative">
-      <img
-        className="absolute -top-96 -left-96 z-0"
-        src="/assets/blob.svg"
-        alt=""
-      />
-      <div className="relative mb-32">
+    <div className="relative py-24 z-30" id="home_work">
+      <div className="container mx-auto">
         {/* main */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 py-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* grid  */}
           <div className="flex items-center mx-auto h-96">
             {/* video */}
@@ -77,7 +72,7 @@ function Work() {
               src="/assets/Men_invest_and_have_made_a_profit.png"
             />
           </div>
-          <div className="flex flex-col justify-between textColorBlue h-96 m-4">
+          <div className="flex flex-col justify-around textColorBlue h-96 m-4">
             {/* text section */}
             <div className="textHeading">
               {/* heading */}

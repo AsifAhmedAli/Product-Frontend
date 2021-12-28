@@ -153,14 +153,14 @@ function Navbar() {
   const [isOpenSession, setIsOpenSession] = useState(false)
   const [session, setSession] = useState(true)
   return (
-    <div className="relative">
-      <img
-        className="absolute -top-full -left-3/4 z-0"
+    <div className="relative z-20" id="home_navbar">
+      {/* <img
+        className="absolute -top-full -left-3/4 z-0 hidden lg:block"
         src="/assets/blob2.svg"
         alt=""
-      />
-      <div className="mb-32">
-        <div className="grid grid-cols-3 gap-4">
+      /> */}
+      <div className="container mx-auto">
+        <div className="grid grid-cols-3 gap-4 items-center">
           {/* grid */}
           <img
             className="h-24 w-64 object-contain"
@@ -194,9 +194,9 @@ function Navbar() {
                     <div className="absolute mt-4 -ml-36 flex flex-col textColorBlue w-48 bg-blue-100 rounded-lg align-middle">
                       <p className="smallNavSession">Profile</p>
                       <Link href="/dashboard">
-                        
-                      <p className="smallNavSession">Dashboard</p>
-                        </Link>
+
+                        <p className="smallNavSession">Dashboard</p>
+                      </Link>
                       <p className="p-4">Settings</p>
                     </div>
                   )}
